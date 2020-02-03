@@ -2,7 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Container from "../components/container"
 
 //images
 import darkBg from "../images/dark-blue-wave-tile.png"
@@ -52,7 +51,7 @@ const WorkshopCard = () => (
 const Banner = () => (
   <>
     <section className="w-full relative bg-primary px-6 py-4">
-      <article className="max-w-2xl pl-32 text-center">
+      <article className="md:max-w-2xl md:pl-32 text-center">
         <img
           className="h-auto w-64 mx-auto"
           src={unstackLogo}
@@ -175,7 +174,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Banner />
-    <Container>
+    <section className="md:px-56 px-12 py-2">
       <section className="mt-24 py-4">
         <header>
           <h2 className="text-xl mb-2">Upcoming Event</h2>
@@ -197,7 +196,7 @@ const IndexPage = () => (
         <p>
           We'll be having these awesome speakers at the 2-day ReactJS workshop
         </p>
-        <section className="flex flex-wrap justify-around">
+        <section className="flex flex-wrap justify-between">
           {new Array(10).fill("placeholder").map((each, key) => (
             <Speaker key={key} />
           ))}
@@ -224,7 +223,7 @@ const IndexPage = () => (
         </section>
       </section>
       <RSVP />
-    </Container>
+    </section>
   </Layout>
 )
 
