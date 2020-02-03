@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>{children}</main>
-      <footer className="py-12 px-32 mt-10 bg-primary text-white text-center">
+      <footer className="py-12 md:px-32 px-16 mt-10 bg-primary text-white text-center">
         © {new Date().getFullYear()}, Built with ❤️ by{" "}
         <a href="https://www.gatsbyjs.org">@kingisaac95</a> with{" "}
         <a href="https://www.gatsbyjs.org">Gatsby</a>
