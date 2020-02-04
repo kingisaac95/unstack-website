@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import Banner from "../components/banner"
 import { SpeakerCard } from "../components/cards"
 
-const SecondPage = () => (
+const Speakers = () => (
   <Layout>
     <SEO title="Speakers" />
     <Banner title="Our list of amazing speakers for the 2-day React workshop." />
@@ -27,4 +27,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default Speakers
