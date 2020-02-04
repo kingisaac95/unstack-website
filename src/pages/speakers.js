@@ -21,7 +21,13 @@ const Speakers = () => (
         </p>
         <section className="flex flex-wrap justify-between">
           {new Array(15).fill("placeholder").map((each, key) => (
-            <LazyLoad key={key} once placeholder={<Loader />}>
+            <LazyLoad
+              key={key}
+              height={100}
+              offset={100}
+              placeholder={<Loader />}
+              once
+            >
               <SpeakerCard key={key} />
             </LazyLoad>
           ))}

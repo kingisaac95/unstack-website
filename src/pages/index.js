@@ -68,7 +68,13 @@ const IndexPage = () => (
         </p>
         <section className="flex flex-wrap justify-between">
           {new Array(6).fill("placeholder").map((each, key) => (
-            <LazyLoad key={key} once placeholder={<Loader />}>
+            <LazyLoad
+              key={key}
+              height={100}
+              offset={100}
+              placeholder={<Loader />}
+              once
+            >
               <SpeakerCard key={key} />
             </LazyLoad>
           ))}
@@ -100,7 +106,13 @@ const IndexPage = () => (
           {Organizers.map((organizer, key) => {
             const { name, work, title, twitterHandle, imageSrc } = organizer
             return (
-              <LazyLoad key={key} once placeholder={<Loader />}>
+              <LazyLoad
+                key={key}
+                height={100}
+                offset={100}
+                placeholder={<Loader />}
+                once
+              >
                 <OrganizerCard
                   key={key}
                   name={name}
