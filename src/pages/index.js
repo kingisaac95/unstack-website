@@ -5,17 +5,39 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Banner from "../components/banner"
-import { SpeakerCard, OrganizerCard } from "../components/cards"
+import { SpeakerCard, OrganizerCard, SponsorCard } from "../components/cards"
 import Organizers from "../content/organizers"
 import Loader from "../components/loader"
+import Speakers from "../content/speakers"
+import Sponsors from "../content/sponsors"
 
 // Sections
-const Sponsors = () => (
+const SponsorsSection = () => (
   <section className="mt-12 py-4">
     <header>
       <h2 className="text-xl mb-2">Sponsors</h2>
     </header>
     <p>unStack events are possible thanks to our wonderful sponsors.</p>
+
+    <section className="flex flex-wrap justify-between">
+      {Sponsors.length > 0 ? (
+        Sponsors.map((sponsor, key) => (
+          <LazyLoad
+            key={key}
+            height={100}
+            offset={100}
+            placeholder={<Loader />}
+            once
+          >
+            <SponsorCard key={key} {...sponsor} />
+          </LazyLoad>
+        ))
+      ) : (
+        <p className="py-6 mt-4 text-blue-600">
+          We'll be updating this page with the list of sponsors soon.
+        </p>
+      )}
+    </section>
   </section>
 )
 
@@ -67,21 +89,27 @@ const IndexPage = () => (
           workshop
         </p>
         <section className="flex flex-wrap justify-between">
-          {new Array(6).fill("placeholder").map((each, key) => (
-            <LazyLoad
-              key={key}
-              height={100}
-              offset={100}
-              placeholder={<Loader />}
-              once
-            >
-              <SpeakerCard key={key} />
-            </LazyLoad>
-          ))}
+          {Speakers.length > 0 ? (
+            Speakers.slice(0, 6).map((each, key) => (
+              <LazyLoad
+                key={key}
+                height={100}
+                offset={100}
+                placeholder={<Loader />}
+                once
+              >
+                <SpeakerCard key={key} />
+              </LazyLoad>
+            ))
+          ) : (
+            <p className="py-6 mt-4 text-blue-600">
+              We'll be updating this page with the list of speakers soon.
+            </p>
+          )}
         </section>
         <section className="mt-10 py-4">
           <Link
-            className="ep_embed_btn bg-blue-500 hover:bg-blue-700 focus:outline-none focus:shadow-outline text-white font-bold py-3 px-8 rounded-full"
+            className="bg-blue-500 hover:bg-blue-700 focus:outline-none focus:shadow-outline text-white font-bold py-3 px-8 rounded-full"
             to="/speakers"
           >
             See all speakers
@@ -89,7 +117,7 @@ const IndexPage = () => (
         </section>
       </section>
 
-      <Sponsors />
+      <SponsorsSection />
 
       <section className="mt-12 py-4" id="organizers">
         <header>
@@ -104,7 +132,6 @@ const IndexPage = () => (
         </p>
         <section className="flex flex-wrap justify-around">
           {Organizers.map((organizer, key) => {
-            const { name, work, title, twitterHandle, imageSrc } = organizer
             return (
               <LazyLoad
                 key={key}
@@ -113,14 +140,7 @@ const IndexPage = () => (
                 placeholder={<Loader />}
                 once
               >
-                <OrganizerCard
-                  key={key}
-                  name={name}
-                  work={work}
-                  title={title}
-                  twitterHandle={twitterHandle}
-                  imageSrc={imageSrc}
-                />
+                <OrganizerCard key={key} {...organizer} />
               </LazyLoad>
             )
           })}

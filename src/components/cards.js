@@ -139,4 +139,28 @@ OrganizerCard.defaultProps = {
   imageSrc: "",
 }
 
-export { WorkshopCard, SpeakerCard, OrganizerCard }
+const SponsorCard = ({ name, imageSrc }) => (
+  <section className="flex items-center max-w-sm shadow-lg bg-white mt-20 mr-2">
+    <section className="px-5 py-4 w-32">
+      <figure>
+        <img
+          className="w-full h-auto w-32 animate-image"
+          src={imageSrc || imagePlaceholder}
+          alt={name}
+        />
+      </figure>
+    </section>
+  </section>
+)
+
+SponsorCard.prototype = {
+  name: PropTypes.string,
+  imageSrc: PropTypes.string,
+}
+
+SponsorCard.defaultProps = {
+  name: "",
+  imageSrc: "",
+}
+
+export { WorkshopCard, SpeakerCard, OrganizerCard, SponsorCard }
