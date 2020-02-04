@@ -1,11 +1,13 @@
 import React from "react"
+import LazyLoad from "react-lazyload"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Banner from "../components/banner"
 import { SpeakerCard, OrganizerCard } from "../components/cards"
 import Organizers from "../content/organizers"
-import { Link } from "gatsby"
+import Loader from "../components/loader"
 
 // Sections
 const Sponsors = () => (
@@ -66,7 +68,9 @@ const IndexPage = () => (
         </p>
         <section className="flex flex-wrap justify-between">
           {new Array(6).fill("placeholder").map((each, key) => (
-            <SpeakerCard key={key} />
+            <LazyLoad key={key} once placeholder={<Loader />}>
+              <SpeakerCard key={key} />
+            </LazyLoad>
           ))}
         </section>
         <section className="mt-10 py-4">
@@ -96,14 +100,16 @@ const IndexPage = () => (
           {Organizers.map((organizer, key) => {
             const { name, work, title, twitterHandle, imageSrc } = organizer
             return (
-              <OrganizerCard
-                key={key}
-                name={name}
-                work={work}
-                title={title}
-                twitterHandle={twitterHandle}
-                imageSrc={imageSrc}
-              />
+              <LazyLoad key={key} once placeholder={<Loader />}>
+                <OrganizerCard
+                  key={key}
+                  name={name}
+                  work={work}
+                  title={title}
+                  twitterHandle={twitterHandle}
+                  imageSrc={imageSrc}
+                />
+              </LazyLoad>
             )
           })}
         </section>

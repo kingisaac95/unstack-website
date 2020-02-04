@@ -1,9 +1,11 @@
 import React from "react"
+import LazyLoad from "react-lazyload"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Banner from "../components/banner"
 import { SpeakerCard } from "../components/cards"
+import Loader from "../components/loader"
 
 const Speakers = () => (
   <Layout>
@@ -19,7 +21,9 @@ const Speakers = () => (
         </p>
         <section className="flex flex-wrap justify-between">
           {new Array(15).fill("placeholder").map((each, key) => (
-            <SpeakerCard key={key} />
+            <LazyLoad key={key} once placeholder={<Loader />}>
+              <SpeakerCard key={key} />
+            </LazyLoad>
           ))}
         </section>
       </section>
