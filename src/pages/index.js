@@ -72,7 +72,7 @@ const IndexPage = () => (
         <section className="mt-10 py-4">
           <Link
             className="ep_embed_btn bg-blue-500 hover:bg-blue-700 focus:outline-none focus:shadow-outline text-white font-bold py-3 px-8 rounded-full"
-            to="/speakers/"
+            to="/speakers"
           >
             See all speakers
           </Link>
@@ -81,7 +81,7 @@ const IndexPage = () => (
 
       <Sponsors />
 
-      <section className="mt-12 py-4">
+      <section className="mt-12 py-4" id="organizers">
         <header>
           <h2 className="text-xl mb-2">Organizers</h2>
         </header>

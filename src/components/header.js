@@ -3,23 +3,21 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header className="bg-primary">
-    <section
-      style={{
-        margin: `0 2rem`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h4 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+  <header className="flex justify-between bg-primary md:px-12 px-12 py-5">
+    <h4 className="m-0 text-xl">
+      <Link to="/" className="text-white no-underline">
+        {siteTitle}
+      </Link>
+    </h4>
+    <section className="flex">
+      <h4 className="m-0">
+        <Link to="/speakers" className="text-white no-underline">
+          Speakers
+        </Link>
+      </h4>
+      <h4 className="m-0 ml-4">
+        <Link to="/#organizers" className="text-white no-underline">
+          Organizers
         </Link>
       </h4>
     </section>
