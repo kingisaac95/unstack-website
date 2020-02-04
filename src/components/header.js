@@ -4,7 +4,7 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header className="bg-primary">
-    <div
+    <section
       style={{
         margin: `0 2rem`,
         maxWidth: 960,
@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h4>
-    </div>
+    </section>
   </header>
 )
 

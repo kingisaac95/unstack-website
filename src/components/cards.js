@@ -6,11 +6,13 @@ import twitterLogo from "../images/twitter-logo.png"
 
 const WorkshopCard = () => (
   <section className="event-highlight md:absolute max-w-sm bg-white shadow-lg">
-    <img
-      className="w-full animate-image"
-      src={reactWorkshopImage}
-      alt="react workshop"
-    />
+    <figure>
+      <img
+        className="w-full animate-image"
+        src={reactWorkshopImage}
+        alt="react workshop"
+      />
+    </figure>
     <section className="px-6 py-4 animate-content">
       <article>
         <header>
@@ -44,11 +46,13 @@ const WorkshopCard = () => (
 
 const SpeakerCard = () => (
   <section className="max-w-md shadow-lg md:flex bg-white rounded-lg p-6 mt-6 mr-4">
-    <img
-      className="h-20 w-20 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"
-      src={imagePlaceholder}
-      alt="speaker placeholder"
-    />
+    <figure>
+      <img
+        className="h-20 w-20 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"
+        src={imagePlaceholder}
+        alt="speaker placeholder"
+      />
+    </figure>
     <article className="text-center md:text-left md:mt-0 mt-12">
       <header>
         <h2 className="text-lg">Erin Lindford</h2>
@@ -58,7 +62,13 @@ const SpeakerCard = () => (
         "Building for the next billion users from Africa"
       </p>
       <section className="text-gray-600 text-sm inline-flex mt-4">
-        <img className="h-5 w-5 mx-auto" src={twitterLogo} alt="twitter logo" />
+        <figure>
+          <img
+            className="h-5 w-5 mx-auto"
+            src={twitterLogo}
+            alt="twitter logo"
+          />
+        </figure>
         <a
           className="ml-2"
           rel="noopener noreferrer"
@@ -75,11 +85,13 @@ const SpeakerCard = () => (
 const OrganizerCard = ({ name, work, title, twitterHandle, imageSrc }) => (
   <section className="relative max-w-sm shadow-lg bg-white mt-20 mr-2 rounded-full py-2 px-4">
     <section className="absolute oranizer-image h-24 w-24 rounded-full bg-white">
-      <img
-        className="h-24 w-24 rounded-full animate-image border-2 border-blue-500"
-        src={imageSrc || imagePlaceholder}
-        alt={name}
-      />
+      <figure>
+        <img
+          className="h-24 w-24 rounded-full animate-image border-2 border-blue-500"
+          src={imageSrc || imagePlaceholder}
+          alt={name}
+        />
+      </figure>
     </section>
     <section className="px-5 py-4 w-56">
       <article className="text-center mt-12">
@@ -89,11 +101,13 @@ const OrganizerCard = ({ name, work, title, twitterHandle, imageSrc }) => (
         <p className="text-blue-700 text-sm">{work}</p>
         <p className="text-gray-700 italic text-sm">{title}</p>
         <section className="text-gray-600 text-sm inline-flex mt-4">
-          <img
-            className="h-5 w-5 mx-auto"
-            src={twitterLogo}
-            alt="twitter logo"
-          />
+          <figure>
+            <img
+              className="h-5 w-5 mx-auto"
+              src={twitterLogo}
+              alt="twitter logo"
+            />
+          </figure>
           <a
             className="ml-2"
             rel="noopener noreferrer"
