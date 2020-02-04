@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 import reactWorkshopImage from "../images/reactjs-workshop.jpg"
 import imagePlaceholder from "../images/image-placeholder.png"
@@ -121,5 +122,21 @@ const OrganizerCard = ({ name, work, title, twitterHandle, imageSrc }) => (
     </section>
   </section>
 )
+
+OrganizerCard.prototype = {
+  name: PropTypes.string,
+  work: PropTypes.string,
+  title: PropTypes.string,
+  twitterHandle: PropTypes.string,
+  imageSrc: PropTypes.string,
+}
+
+OrganizerCard.defaultProps = {
+  name: "",
+  work: "",
+  title: "",
+  twitterHandle: "",
+  imageSrc: "",
+}
 
 export { WorkshopCard, SpeakerCard, OrganizerCard }
