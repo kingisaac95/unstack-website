@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import Banner from "../components/banner"
 import { SpeakerCard, OrganizerCard } from "../components/cards"
 import Organizers from "../content/organizers"
+import { Link } from "gatsby"
 
 // Sections
 const Sponsors = () => (
@@ -60,12 +61,21 @@ const IndexPage = () => (
           <h2 className="text-xl mb-2">Speakers</h2>
         </header>
         <p>
-          We'll be having these awesome speakers at the 2-day ReactJS workshop
+          Here are <i>some</i> of the awesome speakers for the 2-day ReactJS
+          workshop
         </p>
         <section className="flex flex-wrap justify-between">
-          {new Array(5).fill("placeholder").map((each, key) => (
+          {new Array(6).fill("placeholder").map((each, key) => (
             <SpeakerCard key={key} />
           ))}
+        </section>
+        <section className="mt-10 py-4">
+          <Link
+            className="ep_embed_btn bg-blue-500 hover:bg-blue-700 focus:outline-none focus:shadow-outline text-white font-bold py-3 px-8 rounded-full"
+            to="/speakers/"
+          >
+            See all speakers
+          </Link>
         </section>
       </section>
 
