@@ -6,8 +6,9 @@ import SEO from "../components/seo"
 import Banner from "../components/banner"
 import { SpeakerCard } from "../components/cards"
 import Loader from "../components/loader"
+import Speakers from "../content/speakers"
 
-const Speakers = () => (
+const SpeakersPage = () => (
   <Layout>
     <SEO title="Speakers" />
     <Banner title="Our list of amazing speakers for the 2-day React workshop." />
@@ -20,21 +21,27 @@ const Speakers = () => (
           We'll be having these awesome speakers at the 2-day ReactJS workshop
         </p>
         <section className="flex flex-wrap justify-between">
-          {new Array(15).fill("placeholder").map((each, key) => (
-            <LazyLoad
-              key={key}
-              height={100}
-              offset={100}
-              placeholder={<Loader />}
-              once
-            >
-              <SpeakerCard key={key} />
-            </LazyLoad>
-          ))}
+          {Speakers.length > 0 ? (
+            Speakers.map((each, key) => (
+              <LazyLoad
+                key={key}
+                height={100}
+                offset={100}
+                placeholder={<Loader />}
+                once
+              >
+                <SpeakerCard key={key} />
+              </LazyLoad>
+            ))
+          ) : (
+            <p className="py-6 mt-4 text-blue-600">
+              We'll be updating this page with the list of speakers soon.
+            </p>
+          )}
         </section>
       </section>
     </section>
   </Layout>
 )
 
-export default Speakers
+export default SpeakersPage
