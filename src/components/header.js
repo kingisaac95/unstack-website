@@ -24,7 +24,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h4>
       <h4 className="m-0 ml-4">
-        <Link to="/#organizers" className="text-white no-underline">
+        <Link to="/organizers" className="text-white no-underline">
           Organizers
         </Link>
       </h4>

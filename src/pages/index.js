@@ -59,7 +59,7 @@ const IndexPage = () => (
           <h2 className="text-xl mb-2">Upcoming Event</h2>
         </header>
         <p>
-          unstack will be holding a 2-day React workshop for beginners &
+          unStack will be holding a 2-day React workshop for beginners &
           intermediates. Get ready to go from Zero to having knowledge to build
           React apps{" "}
           <span role="img" aria-label="fire emoji">
