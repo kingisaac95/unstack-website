@@ -107,7 +107,7 @@ const OrganizerCard = ({ name, work, title, twitterHandle, imageSrc }) => (
         <section className="text-gray-600 text-sm inline-flex mt-4">
           <figure>
             <img
-              className="h-5 w-5 mx-auto"
+              className="w-6"
               src={twitterLogo}
               alt="twitter logo"
             />
