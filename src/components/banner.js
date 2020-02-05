@@ -9,7 +9,7 @@ import { WorkshopCard } from "./cards"
 const Banner = ({ title }) => (
   <>
     <section className="w-full relative bg-primary px-6 py-4">
-      <article className="md:max-w-2xl md:pl-32 text-center">
+      <article className="md:w-6/12 md:px-24 text-center">
         <figure>
           <img
             className="h-auto w-64 mx-auto"

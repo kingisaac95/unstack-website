@@ -1,5 +1,4 @@
 import React from "react"
-import LazyLoad from "react-lazyload"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -7,7 +6,6 @@ import SEO from "../components/seo"
 import Banner from "../components/banner"
 import { SpeakerCard, OrganizerCard, SponsorCard } from "../components/cards"
 import Organizers from "../content/organizers"
-import Loader from "../components/loader"
 import Speakers from "../content/speakers"
 import Sponsors from "../content/sponsors"
 
@@ -21,17 +19,7 @@ const SponsorsSection = () => (
 
     <section className="flex flex-wrap justify-between">
       {Sponsors.length > 0 ? (
-        Sponsors.map((sponsor, key) => (
-          <LazyLoad
-            key={key}
-            height={100}
-            offset={100}
-            placeholder={<Loader />}
-            once
-          >
-            <SponsorCard key={key} {...sponsor} />
-          </LazyLoad>
-        ))
+        Sponsors.map((sponsor, key) => <SponsorCard key={key} {...sponsor} />)
       ) : (
         <p className="py-6 mt-4 text-blue-600">
           We'll be updating this page with the list of sponsors soon.
@@ -90,17 +78,7 @@ const IndexPage = () => (
         </p>
         <section className="flex flex-wrap justify-between">
           {Speakers.length > 0 ? (
-            Speakers.slice(0, 6).map((each, key) => (
-              <LazyLoad
-                key={key}
-                height={100}
-                offset={100}
-                placeholder={<Loader />}
-                once
-              >
-                <SpeakerCard key={key} />
-              </LazyLoad>
-            ))
+            Speakers.slice(0, 6).map((each, key) => <SpeakerCard key={key} />)
           ) : (
             <p className="py-6 mt-4 text-blue-600">
               We'll be updating this page with the list of speakers soon.
@@ -132,17 +110,7 @@ const IndexPage = () => (
         </p>
         <section className="flex flex-wrap justify-around">
           {Organizers.map((organizer, key) => {
-            return (
-              <LazyLoad
-                key={key}
-                height={100}
-                offset={100}
-                placeholder={<Loader />}
-                once
-              >
-                <OrganizerCard key={key} {...organizer} />
-              </LazyLoad>
-            )
+            return <OrganizerCard key={key} {...organizer} />
           })}
         </section>
       </section>
