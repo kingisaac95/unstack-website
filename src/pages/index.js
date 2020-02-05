@@ -78,7 +78,9 @@ const IndexPage = () => (
         </p>
         <section className="flex flex-wrap justify-between">
           {Speakers.length > 0 ? (
-            Speakers.slice(0, 6).map((each, key) => <SpeakerCard key={key} />)
+            Speakers.slice(0, 8).map((speaker, key) => (
+              <SpeakerCard key={key} {...speaker} />
+            ))
           ) : (
             <p className="py-6 mt-4 text-blue-600">
               We'll be updating this page with the list of speakers soon.

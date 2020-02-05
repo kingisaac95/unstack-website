@@ -45,23 +45,21 @@ const WorkshopCard = () => (
   </section>
 )
 
-const SpeakerCard = () => (
-  <section className="max-w-md shadow-lg md:flex bg-white rounded-lg p-6 mt-6 mr-4">
-    <figure>
+const SpeakerCard = ({ name, work, title, twitterHandle, imageSrc }) => (
+  <section className="md:w-3/5 md:max-w-md w-full shadow-lg md:flex items-center bg-white rounded-lg p-6 mt-6 mr-4">
+    <figure className="md:w-1/4">
       <img
-        className="h-20 w-20 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"
-        src={imagePlaceholder}
+        className="h-40 w-40 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"
+        src={imageSrc != null ? imageSrc : imagePlaceholder}
         alt="speaker placeholder"
       />
     </figure>
-    <article className="text-center md:text-left md:mt-0 mt-12">
+    <article className="md:w-3/4 text-center md:text-left md:mt-0 mt-6 md:ml-6">
       <header>
-        <h2 className="text-lg">Erin Lindford</h2>
+        <h2 className="text-lg">{name}</h2>
       </header>
-      <p className="text-blue-700 text-sm">Software Engineer, Facebook</p>
-      <p className="text-gray-700 italic text-sm">
-        "Building for the next billion users from Africa"
-      </p>
+      <p className="text-blue-700 text-sm">{work}</p>
+      <p className="text-gray-700 italic text-sm">{title}</p>
       <section className="text-gray-600 text-sm inline-flex mt-4">
         <figure>
           <img
@@ -76,12 +74,28 @@ const SpeakerCard = () => (
           target="_blank"
           href="https://twitter.com/"
         >
-          @username
+          @{twitterHandle}
         </a>
       </section>
     </article>
   </section>
 )
+
+SpeakerCard.prototype = {
+  name: PropTypes.string,
+  work: PropTypes.string,
+  title: PropTypes.string,
+  twitterHandle: PropTypes.string,
+  imageSrc: PropTypes.string,
+}
+
+SpeakerCard.defaultProps = {
+  name: "",
+  work: "",
+  title: "",
+  twitterHandle: "",
+  imageSrc: "",
+}
 
 const OrganizerCard = ({ name, work, title, twitterHandle, imageSrc }) => (
   <section className="relative max-w-sm shadow-lg bg-white mt-20 mr-2 rounded-full py-2 px-4">
@@ -89,7 +103,7 @@ const OrganizerCard = ({ name, work, title, twitterHandle, imageSrc }) => (
       <figure>
         <img
           className="h-24 w-24 rounded-full animate-image border-2 border-blue-500"
-          src={imageSrc || imagePlaceholder}
+          src={imageSrc != null ? imageSrc : imagePlaceholder}
           alt={name}
         />
       </figure>
