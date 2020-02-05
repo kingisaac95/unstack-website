@@ -6,16 +6,16 @@ import unstackLogo from "../images/logo.png"
 
 const Header = ({ siteTitle }) => (
   <header className="flex justify-between bg-primary md:px-12 px-12 py-5">
-    <h4 className="m-0 text-xl">
-    <Link to="">
-    <figure >
+    <h4 className="m-0 text-xl" style={{ marginLeft:'-45px' }}>
+      <Link to="">
+        <figure>
           <img
             className="h-auto w-40 mx-auto"
             src={unstackLogo}
             alt="unstack logo"
           />
         </figure>
-        </Link>
+      </Link>
     </h4>
     <section className="flex">
       <h4 className="m-0">

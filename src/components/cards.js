@@ -6,7 +6,7 @@ import imagePlaceholder from "../images/image-placeholder.png"
 import twitterLogo from "../images/twitter-logo.png"
 
 const WorkshopCard = () => (
-  <section style={{marginTop:'150px', marginLeft:'70px' }} className="event-highlight md:absolute max-w-sm bg-white shadow-lg">
+  <section style={{marginTop:'150px', marginLeft:'' }} className="event-highlight md:absolute max-w-sm bg-white shadow-lg">
     <figure>
       <img
         className="w-full animate-image"
