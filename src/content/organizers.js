@@ -6,7 +6,7 @@ import adora from "../images/adora.jpg"
 
 const Organizers = [
   {
-    name: "Shodipo Ayodemi",
+    name: "Shodipo Ayomide",
     work: "MDE, Cloudinary",
     title: "unStack Lead",
     twitterHandle: "developerayo",
