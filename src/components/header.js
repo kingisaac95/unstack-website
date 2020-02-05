@@ -7,13 +7,15 @@ import unstackLogo from "../images/logo.png"
 const Header = ({ siteTitle }) => (
   <header className="flex justify-between bg-primary md:px-12 px-12 py-5">
     <h4 className="m-0 text-xl">
-    <figure>
+    <Link to="">
+    <figure >
           <img
             className="h-auto w-40 mx-auto"
             src={unstackLogo}
             alt="unstack logo"
           />
         </figure>
+        </Link>
     </h4>
     <section className="flex">
       <h4 className="m-0">

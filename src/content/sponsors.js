@@ -6,6 +6,14 @@ import codesandbox from "../images/sponsors/codesandbox.png"
 
 const Sponsors = [
   {
+    name: "Cloudinary",
+    imageSrc: cloudinary,
+  },
+  {
+    name: "Codesandbox",
+    imageSrc: codesandbox,
+  },
+  {
     name: "Egghead",
     imageSrc: egghead,
   },
@@ -14,16 +22,8 @@ const Sponsors = [
     imageSrc: amp,
   },
   {
-    name: "Cloudinary",
-    imageSrc: cloudinary,
-  },
-  {
     name: "Gatsby",
     imageSrc: gatsby,
-  },
-  {
-    name: "Codesandbox",
-    imageSrc: codesandbox,
   },
 ]
 
