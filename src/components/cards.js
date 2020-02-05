@@ -6,7 +6,7 @@ import imagePlaceholder from "../images/image-placeholder.png"
 import twitterLogo from "../images/twitter-logo.png"
 
 const WorkshopCard = () => (
-  <section className="event-highlight md:absolute max-w-sm bg-white shadow-lg">
+  <section style={{marginTop:'150px', marginLeft:'70px' }} className="event-highlight md:absolute max-w-sm bg-white shadow-lg">
     <figure>
       <img
         className="w-full animate-image"
@@ -20,8 +20,8 @@ const WorkshopCard = () => (
           <h2 className="text-xl mb-2">2-day ReactJS Workshop</h2>
         </header>
         <section className="text-base text-gray-700">
-          <p className="mb-2">Date: 6th - 7th March 2020</p>
-          <p className="mb-2">Time: 10:00am till 4:30pm (Each Day)</p>
+          <p className="mb-2">Date: 20th - 21st March 2020</p>
+          <p className="mb-2">Time: 10:00 AM - 4:30 PM (Each Day)</p>
           <p className="">Venue: The Zone, Gbagada, Lagos, Nigeria.</p>
         </section>
       </article>
@@ -35,10 +35,13 @@ const WorkshopCard = () => (
       </section>
       <footer className="flex justify-center px-6 py-4">
         <a
-          href="#rsvp"
+          href="https://eventprime.co/e/unstack-2day-reactjs-workshop"
+          data-wid="ep_widget_1229"
+          rel="noopener noreferrer"
+          target="_blank"
           className="bg-blue-500 hover:bg-blue-700 focus:outline-none focus:shadow-outline text-white font-bold py-3 px-16 rounded-full"
         >
-          RSVP
+          Register
         </a>
       </footer>
     </section>

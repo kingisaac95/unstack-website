@@ -3,21 +3,22 @@ import PropTypes from "prop-types"
 
 //images
 import darkBg from "../images/dark-blue-wave-tile.png"
-import unstackLogo from "../images/logo.png"
+// import unstackLogo from "../images/logo.png"
 import { WorkshopCard } from "./cards"
 
 const Banner = ({ title }) => (
   <>
     <section className="w-full relative bg-primary px-6 py-4">
       <article className="md:w-6/12 md:px-24 text-center">
-        <figure>
+        {/* <figure>
           <img
             className="h-auto w-64 mx-auto"
             src={unstackLogo}
             alt="unstack logo"
           />
-        </figure>
-        <h2 className="text-white mt-16">{title}</h2>
+        </figure> */}
+
+        <h2 className="text-white mt-16" style={{paddingTop:'150px'}}>{title}</h2>
       </article>
 
       <WorkshopCard />
@@ -40,7 +41,7 @@ Banner.prototype = {
 
 Banner.defaultProps = {
   title:
-    "An open-source conference for every engineer focused on hands-on workshops and world-class talks.",
+    "An open-source conference for every engineer focused on hands-on workshops and world-class talk.",
 }
 
 export default Banner

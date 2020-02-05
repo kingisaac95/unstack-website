@@ -2,12 +2,18 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import unstackLogo from "../images/logo.png"
+
 const Header = ({ siteTitle }) => (
   <header className="flex justify-between bg-primary md:px-12 px-12 py-5">
     <h4 className="m-0 text-xl">
-      <Link to="/" className="text-white no-underline">
-        {siteTitle}
-      </Link>
+    <figure>
+          <img
+            className="h-auto w-40 mx-auto"
+            src={unstackLogo}
+            alt="unstack logo"
+          />
+        </figure>
     </h4>
     <section className="flex">
       <h4 className="m-0">
