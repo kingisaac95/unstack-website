@@ -2,13 +2,17 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header className="flex justify-between bg-primary md:px-12 px-12 py-5">
-    <h4 className="m-0 text-xl">
-      <Link to="/" className="text-white no-underline">
-        {siteTitle}
-      </Link>
-    </h4>
+import unstackLogo from "../images/logo.png"
+
+const Header = () => (
+  <header className="flex items-end justify-between bg-primary md:px-12 px-6 py-5">
+    <figure>
+      <img
+        className="h-auto w-24 mx-auto"
+        src={unstackLogo}
+        alt="unstack logo"
+      />
+    </figure>
     <section className="flex">
       <h4 className="m-0">
         <Link to="/speakers" className="text-white no-underline">
@@ -23,13 +27,5 @@ const Header = ({ siteTitle }) => (
     </section>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

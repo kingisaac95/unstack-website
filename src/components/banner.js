@@ -10,14 +10,7 @@ const Banner = ({ title }) => (
   <>
     <section className="w-full relative bg-primary px-6 py-4">
       <article className="md:w-6/12 md:px-24 text-center">
-        <figure>
-          <img
-            className="h-auto w-64 mx-auto"
-            src={unstackLogo}
-            alt="unstack logo"
-          />
-        </figure>
-        <h2 className="text-white mt-16">{title}</h2>
+        <h2 className="text-white mt-24">{title}</h2>
       </article>
 
       <WorkshopCard />
