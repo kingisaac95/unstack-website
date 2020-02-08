@@ -46,9 +46,9 @@ const SpeakerSection = () => (
       Here are <i>some</i> of the awesome speakers for the 2-day ReactJS
       workshop
     </p>
-    <section className="flex flex-wrap justify-between">
+    <section className="flex flex-wrap justify-around">
       {Speakers.length > 0 ? (
-        Speakers.slice(0, 8).map((speaker, key) => (
+        Speakers.slice(0, 9).map((speaker, key) => (
           <SpeakerCard key={key} {...speaker} />
         ))
       ) : (
@@ -75,7 +75,7 @@ const SponsorSection = () => (
     </header>
     <p>unStack events are possible thanks to our wonderful sponsors.</p>
 
-    <section className="flex flex-wrap justify-between">
+    <section className="flex flex-wrap justify-between mt-4">
       {Sponsors.length > 0 ? (
         Sponsors.map((sponsor, key) => <SponsorCard key={key} {...sponsor} />)
       ) : (
@@ -99,7 +99,7 @@ const OrganizerSection = () => (
       </span>{" "}
       individuals.
     </p>
-    <section className="flex flex-wrap justify-around">
+    <section className="flex flex-wrap justify-around mt-4">
       {Organizers.map((organizer, key) => {
         return <OrganizerCard key={key} {...organizer} />
       })}

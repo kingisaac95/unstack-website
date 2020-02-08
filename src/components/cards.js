@@ -36,9 +36,9 @@ const WorkshopCard = () => (
       <footer className="flex justify-center px-6 py-4">
         <a
           href="#rsvp"
-          className="bg-blue-500 hover:bg-blue-700 focus:outline-none focus:shadow-outline text-white font-bold py-3 px-16 rounded-full"
+          className="bg-blue-500 hover:bg-blue-700 focus:outline-none focus:shadow-outline text-white font-bold py-3 px-10 rounded-full"
         >
-          RSVP
+          Register
         </a>
       </footer>
     </section>
@@ -46,24 +46,24 @@ const WorkshopCard = () => (
 )
 
 const SpeakerCard = ({ name, work, title, twitterHandle, imageSrc }) => (
-  <section className="md:w-3/5 md:max-w-md w-full shadow-lg md:flex items-center bg-white rounded-lg p-6 mt-6 mr-4">
-    <figure className="md:w-1/4">
+  <section className="flex flex-col items-center max-w-sm bg-white mt-6 md:mr-6">
+    <figure className="md:h-56 md:w-56 h-40 w-40">
       <img
-        className="h-40 w-40 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"
+        className="w-full h-auto rounded-full md:rounded-none h-40 w-40 mx-auto md:mx-0 md:mr-6"
         src={imageSrc != null ? imageSrc : imagePlaceholder}
         alt="speaker placeholder"
       />
     </figure>
-    <article className="md:w-3/4 text-center md:text-left md:mt-0 mt-6 md:ml-6">
+    <article className="md:w-56 text-center md:text-left md:mt-0 mt-6 py-6">
       <header>
         <h2 className="text-lg">{name}</h2>
       </header>
       <p className="text-blue-700 text-sm">{work}</p>
-      <p className="text-gray-700 italic text-sm">{title}</p>
-      <section className="text-gray-600 text-sm inline-flex mt-4">
+      <p className="text-gray-700 italic text-sm mt-2">{title}</p>
+      <section className="text-gray-600 text-sm inline-flex items-center mt-4">
         <figure>
           <img
-            className="h-5 w-5 mx-auto"
+            className="h-4 w-4 mx-auto"
             src={twitterLogo}
             alt="twitter logo"
           />
@@ -98,11 +98,11 @@ SpeakerCard.defaultProps = {
 }
 
 const OrganizerCard = ({ name, work, title, twitterHandle, imageSrc }) => (
-  <section className="relative max-w-sm shadow-lg bg-white mt-20 mr-2 rounded-full py-2 px-4">
-    <section className="absolute oranizer-image h-24 w-24 rounded-full bg-white">
+  <section className="relative max-w-sm shadow-lg bg-white mt-32 mr-2 rounded-md py-2 px-4">
+    <section className="absolute oranizer-image h-40 w-40 rounded-full bg-white">
       <figure>
         <img
-          className="h-24 w-24 rounded-full animate-image border-2 border-blue-500"
+          className="h-40 w-40 rounded-full"
           src={imageSrc != null ? imageSrc : imagePlaceholder}
           alt={name}
         />
@@ -115,10 +115,10 @@ const OrganizerCard = ({ name, work, title, twitterHandle, imageSrc }) => (
         </header>
         <p className="text-blue-700 text-sm">{work}</p>
         <p className="text-gray-700 italic text-sm">{title}</p>
-        <section className="text-gray-600 text-sm inline-flex mt-4">
+        <section className="text-gray-600 text-sm inline-flex items-center mt-4">
           <figure>
             <img
-              className="h-5 w-5 mx-auto"
+              className="h-4 w-4 mx-auto"
               src={twitterLogo}
               alt="twitter logo"
             />
@@ -154,9 +154,9 @@ OrganizerCard.defaultProps = {
 }
 
 const SponsorCard = ({ name, imageSrc }) => (
-  <section className="flex items-center max-w-sm bg-white mt-20 mr-2">
+  <section className="flex items-center max-w-sm bg-white mt-5 mr-2">
     <section className="px-5 py-4 w-32">
-      <figure>
+      <figure title={name}>
         <img
           className="w-full h-auto w-32 animate-image"
           src={imageSrc || imagePlaceholder}

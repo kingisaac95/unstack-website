@@ -10,8 +10,14 @@
 }
 
 .oranizer-image {
-  top: -3rem;
-  left: calc(50% - 3rem);
+  top: -6rem;
+  left: calc(50% - 5rem);
+}
+
+@media (min-width: 768px) {
+  .speaker-card {
+    width: 15rem;
+  }
 }
 
 .animate-content {
