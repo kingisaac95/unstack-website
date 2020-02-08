@@ -154,7 +154,7 @@ OrganizerCard.defaultProps = {
 }
 
 const SponsorCard = ({ name, imageSrc }) => (
-  <section className="flex items-center max-w-sm shadow-lg bg-white mt-20 mr-2">
+  <section className="flex items-center max-w-sm bg-white mt-20 mr-2">
     <section className="px-5 py-4 w-32">
       <figure>
         <img
