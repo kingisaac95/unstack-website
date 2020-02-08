@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 
 //images
 import darkBg from "../images/dark-blue-wave-tile.png"
-import unstackLogo from "../images/logo.png"
 import { WorkshopCard } from "./cards"
 
 const Banner = ({ title }) => (
