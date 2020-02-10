@@ -59,7 +59,7 @@ const SpeakerSection = () => (
     </section>
     <section className="mt-10 py-4">
       <Link
-        className="bg-blue-500 hover:bg-blue-700 focus:outline-none focus:shadow-outline text-white font-bold py-3 px-8 rounded-full"
+        className="bg-blue-500 hover:bg-blue-700 focus:outline-none focus:shadow-outline text-black font-bold py-3 px-8 rounded-full"
         to="/speakers"
       >
         See all speakers
@@ -115,7 +115,7 @@ const RsvpSection = () => (
     <p>Please register to attend the next unStack event.</p>
     <section className="mt-10 py-4">
       <a
-        className="ep_embed_btn bg-blue-500 hover:bg-blue-700 focus:outline-none focus:shadow-outline text-white font-bold py-3 px-16 rounded-full"
+        className="ep_embed_btn bg-blue-500 hover:bg-blue-700 focus:outline-none focus:shadow-outline text-black font-bold py-3 px-16 rounded-full"
         href="https://eventprime.co/e/unstack-2day-reactjs-workshop"
         data-wid="ep_widget_1229"
         rel="noopener noreferrer"

@@ -36,7 +36,7 @@ const WorkshopCard = () => (
       <footer className="flex justify-center px-6 py-4">
         <a
           href="#rsvp"
-          className="bg-blue-500 hover:bg-blue-700 focus:outline-none focus:shadow-outline text-white font-bold py-3 px-10 rounded-full"
+          className="bg-blue-500 hover:bg-blue-700 focus:outline-none focus:shadow-outline text-black font-bold py-3 px-10 rounded-full"
         >
           Register
         </a>
