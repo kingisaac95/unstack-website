@@ -20,7 +20,7 @@ const SpeakersPage = () => (
         <p>
           We'll be having these awesome speakers at the 2-day ReactJS workshop
         </p>
-        <section className="flex flex-wrap justify-between">
+        <section className="flex flex-wrap justify-around">
           {Speakers.length > 0 ? (
             Speakers.map((speaker, key) => (
               <LazyLoad
