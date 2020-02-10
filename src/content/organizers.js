@@ -1,8 +1,8 @@
-import shodipoayomide from "../images/shodipoayomide.jpg"
-import kingdom from "../images/kingdom.png"
-import marvin from "../images/marvin.jpg"
-import ademola from "../images/ademola.png"
-import adora from "../images/adora.jpg"
+import shodipoayomide from "../images/organizers/shodipoayomide.jpg"
+import kingdom from "../images/organizers/kingdom.png"
+import marvin from "../images/organizers/marvin.jpg"
+import ademola from "../images/organizers/ademola.png"
+import adora from "../images/organizers/adora.jpg"
 
 const Organizers = [
   {

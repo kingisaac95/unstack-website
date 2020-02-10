@@ -49,7 +49,7 @@ const SpeakerCard = ({ name, work, title, twitterHandle, imageSrc }) => (
   <section className="flex flex-col items-center max-w-sm bg-white mt-6 md:mr-6">
     <figure className="md:h-56 md:w-56 h-40 w-40">
       <img
-        className="w-full h-auto rounded-full md:rounded-none h-40 w-40 mx-auto md:mx-0 md:mr-6"
+        className="md:h-56 md:w-56 h-40 w-40 rounded-full md:rounded-none h-40 w-40 mx-auto md:mx-0 md:mr-6"
         src={imageSrc != null ? imageSrc : imagePlaceholder}
         alt="speaker placeholder"
       />
