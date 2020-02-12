@@ -1,30 +1,29 @@
-import egghead from "../images/sponsors/egghead.png"
-import amp from "../images/sponsors/amp.png"
-import cloudinary from "../images/sponsors/cloudinary.png"
-import gatsby from "../images/sponsors/gatsby.png"
-import codesandbox from "../images/sponsors/codesandbox.png"
-
 const Sponsors = [
   {
     name: "Cloudinary",
-    imageSrc: cloudinary,
+    imageSrc:
+      "https://res.cloudinary.com/kingisaac95/image/upload/v1581518385/unstack_sponsors/cloudinary.png",
   },
   {
     name: "Codesandbox",
-    imageSrc: codesandbox,
+    imageSrc:
+      "https://res.cloudinary.com/kingisaac95/image/upload/v1581518385/unstack_sponsors/codesandbox.png",
   },
   {
     name: "Egghead",
-    imageSrc: egghead,
+    imageSrc:
+      "https://res.cloudinary.com/kingisaac95/image/upload/v1581518385/unstack_sponsors/egghead.png",
   },
   {
     name: "Amp",
-    imageSrc: amp,
+    imageSrc:
+      "https://res.cloudinary.com/kingisaac95/image/upload/v1581518385/unstack_sponsors/amp.png",
   },
 
   {
     name: "Gatsby",
-    imageSrc: gatsby,
+    imageSrc:
+      "https://res.cloudinary.com/kingisaac95/image/upload/v1581518386/unstack_sponsors/gatsby.png",
   },
 ]
 

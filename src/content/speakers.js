@@ -1,35 +1,5 @@
-import AkinbodeAkinlolu from "../images/speakers/AkinbodeAkinlolu.jpg"
-import AuwalMS from "../images/speakers/AuwalMS.jpg"
-import DanielBamidele from "../images/speakers/DanielBamidele.jpg"
-import EtinObaseki from "../images/speakers/EtinObaseki.jpg"
-import JemimaAbu from "../images/speakers/JemimaAbu.jpg"
-import SegunOla from "../images/speakers/SegunOla.jpg"
-import UmarMash from "../images/speakers/UmarMash.jpg"
-import AkinjobiSodiq from "../images/speakers/AkinjobiSodiq.jpeg"
-import BolajiAyodeji from "../images/speakers/BolajiAyodeji.jpeg"
-import DemolaHussain from "../images/speakers/DemolaHussain.jpg"
-import GladChinda from "../images/speakers/GladChinda.jpg"
-import JenniferOlibie from "../images/speakers/JenniferOlibie.png"
-import SeunDaramola from "../images/speakers/SeunDaramola.jpeg"
-import VishwaMehta from "../images/speakers/VishwaMehta.jpg"
-import AkintundeSultan from "../images/speakers/AkintundeSultan.jpg"
-import BolajiOlajide from "../images/speakers/BolajiOlajide.jpg"
-import DevlinDuldulao from "../images/speakers/DevlinDuldulao.jpg"
-import IdahosaAkioya from "../images/speakers/IdahosaAkioya.jpg"
-import ObinnaEkwuno from "../images/speakers/ObinnaEkwuno.jpg"
-import SidharthaChatterjee from "../images/speakers/SidharthaChatterjee.jpg"
-import AnayoOleru from "../images/speakers/AnayoOleru.jpg"
-import ChukwuemekaChima from "../images/speakers/ChukwuemekaChima.jpg"
-import EkeneAshinze from "../images/speakers/EkeneAshinze.jpg"
-import IyiolaOsuagwu from "../images/speakers/IyiolaOsuagwu.jpeg"
-import OgunfemiAyobami from "../images/speakers/OgunfemiAyobami.jpeg"
-import TamasPiros from "../images/speakers/TamasPiros.jpg"
-import AnyanwuAmaka from "../images/speakers/AnyanwuAmaka.jpg"
-import DanAbramov from "../images/speakers/DanAbramov.jpeg"
-import EmmanuelPopoola from "../images/speakers/EmmanuelPopoola.jpg"
-import JamesQuick from "../images/speakers/JamesQuick.png"
-import OlaoluOlawuyi from "../images/speakers/OlaoluOlawuyi.png"
-import TobiTaiwo from "../images/speakers/TobiTaiwo.jpg"
+const CLOUDINARY_BASE_PATH =
+  "https://res.cloudinary.com/kingisaac95/image/upload/w_252,h_252,c_thumb,g_face"
 
 const Speakers = [
   {
@@ -37,70 +7,98 @@ const Speakers = [
     work: "Software Engineer, Facebook",
     title: "JustJavaScript",
     twitterHandle: "dan_abramov",
-    imageSrc: DanAbramov,
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512774/unstack_speakers/DanAbramov.jpg`,
   },
   {
     name: "Vishwa Mehta",
     work: "Technical Writer",
     title: "A11y & React: Breaking the Confundus Charm",
     twitterHandle: "VishwaMehta30",
-    imageSrc: VishwaMehta,
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512779/unstack_speakers/VishwaMehta.jpg`,
   },
   {
     name: "Uzoamaka Anyanwu",
     work: "JavaScript Developer, Lambda School",
     title: "JavaScript Essentials for ReactJS",
     twitterHandle: "HeyAmaka",
-    imageSrc: AnyanwuAmaka,
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512773/unstack_speakers/AnyanwuAmaka.jpg`,
   },
   {
-    name: "Segun Ola",
-    work: "Software Engineer, Andela",
-    title: "Accessibility - Build, Test, Fix",
-    twitterHandle: "segunolalive",
-    imageSrc: SegunOla,
+    name: "Bolaji Olajide",
+    work: "Software Engineer, Pluralsight",
+    title: "Getting Started with GraphQL",
+    twitterHandle: "Bolaji___",
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512777/unstack_speakers/BolajiOlajide.jpg`,
   },
   {
     name: "Sid Chatterjee",
     work: "Senior Software Engineer, Gatsby",
     title: "Building a Gatsby Theme",
     twitterHandle: "chatsidhartha",
-    imageSrc: SidharthaChatterjee,
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512779/unstack_speakers/SidharthaChatterjee.jpg`,
   },
   {
-    name: "Devlin Duldulao",
-    work: "Senior Consultant, Inmeta",
-    title: "React Native Redux TypeScript",
-    twitterHandle: "DevlinDuldulao",
-    imageSrc: DevlinDuldulao,
+    name: "James Quick",
+    work: "Developer Advocate, Auth0",
+    title: "Securing React Applications with Auth0",
+    twitterHandle: "jamesquick",
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512777/unstack_speakers/JamesQuick.png`,
   },
   {
-    name: "Glad Chinda",
-    work: "Frontend Engineer, Flutterwave",
-    title: "A deep dive into using React hooks",
-    twitterHandle: "gladchinda",
-    imageSrc: GladChinda,
+    name: "Etinosa Obaseki",
+    work: "Software Engineer",
+    title: "Building a note app with ReactJS and Firebase",
+    twitterHandle: "obasekietinosa",
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512776/unstack_speakers/EtinObaseki.jpg`,
   },
   {
-    name: "Obinna Ekwuno",
-    work: "Software Engineer, Gatsby",
-    title: "Let's build a blazings fast website with Gatsby magic.",
-    twitterHandle: "obinnaspeaks",
-    imageSrc: ObinnaEkwuno,
+    name: "Ekene Ashinze",
+    work: "Web Developer, OPay",
+    title: "Bundle Size Optimisation in JavaScript Applications",
+    twitterHandle: "ashinzekene",
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512776/unstack_speakers/EkeneAshinze.jpg`,
   },
   {
     name: "Akitunde Sultan",
     work: "Founder, DevCareer",
     title: "Moving from Beginner - Intermediate - Advanced as a developer",
     twitterHandle: "hacksultan",
-    imageSrc: AkintundeSultan,
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512773/unstack_speakers/AkintundeSultan.jpg`,
+  },
+  {
+    name: "Segun Ola",
+    work: "Software Engineer, Andela",
+    title: "Accessibility - Build, Test, Fix",
+    twitterHandle: "segunolalive",
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512778/unstack_speakers/SegunOla.jpg`,
+  },
+  {
+    name: "Devlin Duldulao",
+    work: "Senior Consultant, Inmeta",
+    title: "React Native Redux TypeScript",
+    twitterHandle: "DevlinDuldulao",
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512775/unstack_speakers/DevlinDuldulao.jpg`,
+  },
+  {
+    name: "Glad Chinda",
+    work: "Frontend Engineer, Flutterwave",
+    title: "A deep dive into using React hooks",
+    twitterHandle: "gladchinda",
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512778/unstack_speakers/GladChinda.jpg`,
+  },
+  {
+    name: "Obinna Ekwuno",
+    work: "Software Engineer, Gatsby",
+    title: "Let's build a blazings fast website with Gatsby magic.",
+    twitterHandle: "obinnaspeaks",
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512778/unstack_speakers/ObinnaEkwuno.jpg`,
   },
   {
     name: "Akinbode Akinlolu",
     work: "Full Stack Developer, Gricd",
     title: "Props and State Management in ReactJS",
     twitterHandle: "weezykon",
-    imageSrc: AkinbodeAkinlolu,
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512773/unstack_speakers/AkinbodeAkinlolu.jpg`,
   },
 ]
 

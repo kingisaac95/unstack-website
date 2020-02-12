@@ -35,10 +35,13 @@ const WorkshopCard = () => (
       </section>
       <footer className="flex justify-center px-6 py-4">
         <a
-          href="#rsvp"
-          className="bg-blue-500 hover:bg-blue-700 focus:outline-none focus:shadow-outline text-black font-bold py-3 px-10 rounded-full"
+          className="ep_embed_btn bg-blue-500 hover:bg-blue-700 focus:outline-none focus:shadow-outline text-white font-bold py-3 px-16 rounded-full"
+          href="https://eventprime.co/e/unstack-2day-reactjs-workshop"
+          data-wid="ep_widget_1229"
+          rel="noopener noreferrer"
+          target="_blank"
         >
-          Register
+          Save a seat
         </a>
       </footer>
     </section>
@@ -62,17 +65,13 @@ const SpeakerCard = ({ name, work, title, twitterHandle, imageSrc }) => (
       <p className="text-gray-700 italic text-sm mt-2">{title}</p>
       <section className="text-gray-600 text-sm inline-flex items-center mt-4">
         <figure>
-          <img
-            className="h-4 w-4 mx-auto"
-            src={twitterLogo}
-            alt="twitter logo"
-          />
+          <img className="w-4 mx-auto" src={twitterLogo} alt="twitter logo" />
         </figure>
         <a
           className="ml-2"
           rel="noopener noreferrer"
           target="_blank"
-          href="https://twitter.com/"
+          href={`https://twitter.com/${twitterHandle}`}
         >
           @{twitterHandle}
         </a>
@@ -98,7 +97,7 @@ SpeakerCard.defaultProps = {
 }
 
 const OrganizerCard = ({ name, work, title, twitterHandle, imageSrc }) => (
-  <section className="relative max-w-sm shadow-lg bg-white mt-32 mr-2 rounded-md py-2 px-4">
+  <section className="relative max-w-sm shadow-lg hover:shadow-none bg-white mt-32 mr-2 rounded-md py-2 px-4">
     <section className="absolute oranizer-image h-40 w-40 rounded-full bg-white">
       <figure>
         <img
@@ -117,11 +116,7 @@ const OrganizerCard = ({ name, work, title, twitterHandle, imageSrc }) => (
         <p className="text-gray-700 italic text-sm">{title}</p>
         <section className="text-gray-600 text-sm inline-flex items-center mt-4">
           <figure>
-            <img
-              className="h-4 w-4 mx-auto"
-              src={twitterLogo}
-              alt="twitter logo"
-            />
+            <img className="w-4 mx-auto" src={twitterLogo} alt="twitter logo" />
           </figure>
           <a
             className="ml-2"
@@ -154,7 +149,7 @@ OrganizerCard.defaultProps = {
 }
 
 const SponsorCard = ({ name, imageSrc }) => (
-  <section className="flex items-center max-w-sm bg-white mt-5 mr-2">
+  <section className="flex items-center max-w-sm bg-white mt-5 mr-2 hover:shadow-lg">
     <section className="px-5 py-4 w-32">
       <figure title={name}>
         <img

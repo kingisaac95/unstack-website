@@ -1,8 +1,5 @@
-import shodipoayomide from "../images/organizers/shodipoayomide.jpg"
-import kingdom from "../images/organizers/kingdom.png"
-import marvin from "../images/organizers/marvin.jpg"
-import ademola from "../images/organizers/ademola.png"
-import adora from "../images/organizers/adora.jpg"
+const CLOUDINARY_BASE_PATH =
+  "https://res.cloudinary.com/kingisaac95/image/upload/w_180,h_180,c_thumb,g_face"
 
 const Organizers = [
   {
@@ -10,35 +7,35 @@ const Organizers = [
     work: "MDE, Cloudinary",
     title: "unStack Lead",
     twitterHandle: "developerayo",
-    imageSrc: shodipoayomide,
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581518347/unstack_organizers/shodipoayomide.jpg`,
   },
   {
     name: "Kingdom Orjiewuru",
     work: "Software Engineer, Andela",
     title: "unStack Co-Lead",
     twitterHandle: "kingisaac95",
-    imageSrc: kingdom,
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581518347/unstack_organizers/kingdom.png`,
   },
   {
     name: "Marvin Ogah",
     work: "Design, Sterling Bank",
     title: "unStack Co-Lead",
     twitterHandle: "marvinographer",
-    imageSrc: marvin,
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581518347/unstack_organizers/marvin.jpg`,
   },
   {
     name: "Ademola Adegbuyi",
     work: "Software Engineer, Paystack",
     title: "unStack Co-Lead",
     twitterHandle: "_ooade",
-    imageSrc: ademola,
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581518347/unstack_organizers/ademola.png`,
   },
   {
     name: "Adora Nwodo",
     work: "Software Engineer, Microsoft",
     title: "unStack Co-Lead",
     twitterHandle: "AdoraNwodo",
-    imageSrc: adora,
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581518347/unstack_organizers/adora.jpg`,
   },
 ]
 
