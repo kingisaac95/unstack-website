@@ -20,7 +20,7 @@ const WorkshopCard = () => (
           <h2 className="text-xl mb-2">2-day ReactJS Workshop</h2>
         </header>
         <section className="text-base text-gray-700">
-          <p className="mb-2">Date: 6th - 7th March 2020</p>
+          <p className="mb-2">Date: 20th - 21st March 2020</p>
           <p className="mb-2">Time: 10:00am till 4:30pm (Each Day)</p>
           <p className="">Venue: The Zone, Gbagada, Lagos, Nigeria.</p>
         </section>
