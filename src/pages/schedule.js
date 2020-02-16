@@ -15,7 +15,13 @@ const Schedule = () => (
         </header>
         <p>Here's a schedule of events for the 2-day ReactJS workshop</p>
         <section>
-          <iframe></iframe>
+          <iframe
+            title="schedule"
+            src="https://conference-schedule.netlify.com"
+            frameBorder="0"
+            width="1000"
+            height="500"
+          ></iframe>
         </section>
       </section>
     </section>

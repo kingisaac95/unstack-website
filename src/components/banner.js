@@ -9,7 +9,7 @@ const Banner = ({ title }) => (
   <>
     <section className="w-full relative bg-primary px-6 py-4">
       <article className="md:w-6/12 md:px-24 text-center">
-        <h2 className="text-white mt-24">{title}</h2>
+        <h2 className="text-white mt-5 md:mt-24">{title}</h2>
       </article>
 
       <WorkshopCard />

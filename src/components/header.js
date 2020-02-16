@@ -4,7 +4,7 @@ import React from "react"
 import unstackLogo from "../images/logo.png"
 
 const Header = () => (
-  <header className="flex items-end justify-between bg-primary md:px-12 px-6 py-5">
+  <header className="flex md:items-end items-center justify-between md:flex-row flex-col bg-primary md:px-12 px-6 py-5">
     <Link to="/">
       <figure>
         <img
@@ -14,10 +14,15 @@ const Header = () => (
         />
       </figure>
     </Link>
-    <section className="flex">
+    <section className="flex mt-4 md:mt-0">
       <h4 className="m-0">
         <Link to="/speakers" className="text-white no-underline">
           Speakers
+        </Link>
+      </h4>
+      <h4 className="m-0 ml-4">
+        <Link to="/schedule" className="text-white no-underline">
+          Schedule
         </Link>
       </h4>
       <h4 className="m-0 ml-4">
