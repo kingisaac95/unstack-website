@@ -37,6 +37,27 @@ const Organizers = [
     twitterHandle: "AdoraNwodo",
     imageSrc: `${CLOUDINARY_BASE_PATH}/v1581518347/unstack_organizers/adora.jpg`,
   },
+  {
+    name: "Emmanuel Oaikhenan",
+    work: "Software Engineer",
+    title: "unStack Co-Lead",
+    twitterHandle: "",
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581518347/unstack_organizers/emmanuel.jpg`,
+  },
+  {
+    name: "Michael Shodipo",
+    work: "Designer",
+    title: "unStack Co-Lead",
+    twitterHandle: "",
+    imageSrc: null,
+  },
+  {
+    name: "Oluebube Princess Egbuna",
+    work: "Software Engineer",
+    title: "unStack Co-Lead",
+    twitterHandle: "",
+    imageSrc: null,
+  },
 ]
 
 export default Organizers
