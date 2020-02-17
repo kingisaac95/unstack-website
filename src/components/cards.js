@@ -1,9 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import reactWorkshopImage from "../images/reactjs-workshop.jpg"
-import imagePlaceholder from "../images/image-placeholder.png"
-import twitterLogo from "../images/twitter-logo.png"
+const reactWorkshopImage =
+  "https://res.cloudinary.com/kingisaac95/image/upload/v1581518763/unstack_assets/reactjs-workshop.jpg"
+const imagePlaceholder =
+  "https://res.cloudinary.com/kingisaac95/image/upload/v1581518763/unstack_assets/image-placeholder.png"
+const twitterLogo =
+  "https://res.cloudinary.com/kingisaac95/image/upload/v1581518762/unstack_assets/twitter-logo.png"
 
 const WorkshopCard = () => (
   <section className="event-highlight md:absolute max-w-sm bg-white shadow-lg">

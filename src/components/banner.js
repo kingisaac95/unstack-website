@@ -2,8 +2,10 @@ import React from "react"
 import PropTypes from "prop-types"
 
 //images
-import darkBg from "../images/dark-blue-wave-tile.png"
 import { WorkshopCard } from "./cards"
+
+const darkBg =
+  "https://res.cloudinary.com/kingisaac95/image/upload/v1581518763/unstack_assets/dark-blue-wave-tile.png"
 
 const Banner = ({ title }) => (
   <>

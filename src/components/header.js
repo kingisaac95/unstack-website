@@ -1,7 +1,8 @@
 import { Link } from "gatsby"
 import React from "react"
 
-import unstackLogo from "../images/logo.png"
+const unstackLogo =
+  "https://res.cloudinary.com/kingisaac95/image/upload/v1581518763/unstack_assets/logo.png"
 
 const Header = () => (
   <header className="flex md:items-end items-center justify-between md:flex-row flex-col bg-primary md:px-12 px-6 py-5">
@@ -20,11 +21,11 @@ const Header = () => (
           Speakers
         </Link>
       </h4>
-      <h4 className="m-0 ml-4">
+      {/* <h4 className="m-0 ml-4">
         <Link to="/schedule" className="text-white no-underline">
           Schedule
         </Link>
-      </h4>
+      </h4> */}
       <h4 className="m-0 ml-4">
         <Link to="/#organizers" className="text-white no-underline">
           Organizers
