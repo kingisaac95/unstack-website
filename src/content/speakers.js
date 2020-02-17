@@ -45,25 +45,11 @@ const Speakers = [
     imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512777/unstack_speakers/JamesQuick.png`,
   },
   {
-    name: "Etinosa Obaseki",
-    work: "Software Engineer",
-    title: "Building a note app with ReactJS and Firebase",
-    twitterHandle: "obasekietinosa",
-    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512776/unstack_speakers/EtinObaseki.jpg`,
-  },
-  {
-    name: "Ekene Ashinze",
-    work: "Web Developer, OPay",
-    title: "Bundle Size Optimisation in JavaScript Applications",
-    twitterHandle: "ashinzekene",
-    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512776/unstack_speakers/EkeneAshinze.jpg`,
-  },
-  {
-    name: "Akitunde Sultan",
-    work: "Founder, DevCareer",
-    title: "Moving from Beginner - Intermediate - Advanced as a developer",
-    twitterHandle: "hacksultan",
-    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512773/unstack_speakers/AkintundeSultan.jpg`,
+    name: "Obinna Ekwuno",
+    work: "Software Engineer, Gatsby",
+    title: "Let's build a blazings fast website with Gatsby magic.",
+    twitterHandle: "obinnaspeaks",
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512778/unstack_speakers/ObinnaEkwuno.jpg`,
   },
   {
     name: "Segun Ola",
@@ -73,11 +59,39 @@ const Speakers = [
     imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512778/unstack_speakers/SegunOla.jpg`,
   },
   {
-    name: "Devlin Duldulao",
-    work: "Senior Consultant, Inmeta",
-    title: "React Native Redux TypeScript",
-    twitterHandle: "DevlinDuldulao",
-    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512775/unstack_speakers/DevlinDuldulao.jpg`,
+    name: "Ekene Ashinze",
+    work: "Web Developer, OPay",
+    title: "Bundle Size Optimisation in JavaScript Applications",
+    twitterHandle: "ashinzekene",
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512776/unstack_speakers/EkeneAshinze.jpg`,
+  },
+  {
+    name: "Orjiewuru Kingdom",
+    work: "Software Engineer, Andela",
+    title: "Rapid prototyping with Tailwind css",
+    twitterHandle: "kingisaac95",
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581961398/unstack_organizers/kingdom.png`,
+  },
+  {
+    name: "Olaolu Olawuyi",
+    work: "Senior Frontend Engineer",
+    title: "Chrome DevTools Power Tips",
+    twitterHandle: "mrolaolu",
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512779/unstack_speakers/OlaoluOlawuyi.png`,
+  },
+  {
+    name: "Shodipo Ayomide",
+    work: "MDE, Cloudinary",
+    title: "Cloudinary on Steroids",
+    twitterHandle: "developerayo",
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581960800/unstack_organizers/shodipoayomide.png`,
+  },
+  {
+    name: "Akitunde Sultan",
+    work: "Founder, DevCareer",
+    title: "Moving from Beginner - Intermediate - Advanced as a developer",
+    twitterHandle: "hacksultan",
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512773/unstack_speakers/AkintundeSultan.jpg`,
   },
   {
     name: "Glad Chinda",
@@ -86,12 +100,13 @@ const Speakers = [
     twitterHandle: "gladchinda",
     imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512778/unstack_speakers/GladChinda.jpg`,
   },
+
   {
-    name: "Obinna Ekwuno",
-    work: "Software Engineer, Gatsby",
-    title: "Let's build a blazings fast website with Gatsby magic.",
-    twitterHandle: "obinnaspeaks",
-    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512778/unstack_speakers/ObinnaEkwuno.jpg`,
+    name: "Tamas Piros",
+    work: "Developer Evangelist,	Full Stack Training",
+    title: "Getting started with JAMstack",
+    twitterHandle: "tpiros",
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512778/unstack_speakers/TamasPiros.jpg`,
   },
   {
     name: "Akinbode Akinlolu",
@@ -100,19 +115,13 @@ const Speakers = [
     twitterHandle: "weezykon",
     imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512773/unstack_speakers/AkinbodeAkinlolu.jpg`,
   },
-  {
-    name: "Orjiewuru Kingdom",
-    work: "Software Engineer, Andela",
-    title: "Rapid prototyping with Tailwind css",
-    twitterHandle: "kingisaac95",
-    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512773/unstack_organizers/kingdom.png`,
-  },
+
   {
     name: "Adora Nwodo",
     work: "Software Engineer, Microsoft",
     title: "7 Habits for highly effective engineering teams",
     twitterHandle: "adoranwodo",
-    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512773/unstack_organizers/adora.png`,
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581960796/unstack_organizers/adora.jpg`,
   },
   {
     name: "Bolaji Ayodeji",
@@ -172,18 +181,19 @@ const Speakers = [
     imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512774/unstack_speakers/AnayoOleru.jpg`,
   },
   {
-    name: "Jemima Abu",
-    work: "Frontend Developer",
-    title: "Methods for styling React Components",
-    twitterHandle: "jemimaabu",
-    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512778/unstack_speakers/JemimaAbu.jpg`,
-  },
-  {
     name: "Sodiq Akinjobi",
     work: "Lead	DSC Unilag",
     title: "Hooking React with WordPress",
     twitterHandle: "Geektutor",
     imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512773/unstack_speakers/AkinjobiSodiq.jpg`,
+  },
+
+  {
+    name: "Etinosa Obaseki",
+    work: "Software Engineer",
+    title: "Building a note app with ReactJS and Firebase",
+    twitterHandle: "obasekietinosa",
+    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512776/unstack_speakers/EtinObaseki.jpg`,
   },
   {
     name: "Olibie Jennifer",
@@ -213,13 +223,7 @@ const Speakers = [
     twitterHandle: "osuagwu",
     imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512778/unstack_speakers/IyiolaOsuagwu.jpg`,
   },
-  {
-    name: "Tamas Piros",
-    work: "Developer Evangelist,	Full Stack Training",
-    title: "Getting started with JAMstack",
-    twitterHandle: "tpiros",
-    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512778/unstack_speakers/TamasPiros.jpg`,
-  },
+
   {
     name: "Auwal MS",
     work: "Program Manager, DSC,	Google",
@@ -240,13 +244,6 @@ const Speakers = [
     title: "CSS-in-JS",
     twitterHandle: "bamiogunfemi",
     imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512778/unstack_speakers/OgunfemiAyobami.jpg`,
-  },
-  {
-    name: "Olaolu Olawuyi",
-    work: "Senior Frontend Engineer",
-    title: "Chrome DevTools Power Tips",
-    twitterHandle: "mrolaolu",
-    imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512779/unstack_speakers/OlaoluOlawuyi.png`,
   },
 ]
 
