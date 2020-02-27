@@ -21,11 +21,11 @@ const Header = () => (
           Speakers
         </Link>
       </h4>
-      <h4 className="m-0 ml-4">
+      {/* <h4 className="m-0 ml-4">
         <Link to="/schedule" className="text-white no-underline">
           Schedule
         </Link>
-      </h4>
+      </h4> */}
       <h4 className="m-0 ml-4">
         <Link to="/#organizers" className="text-white no-underline">
           Organizers
