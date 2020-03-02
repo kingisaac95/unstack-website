@@ -103,7 +103,7 @@ const Speakers = [
   },
   {
     name: "Tamas Piros",
-    work: "Developer Evangelist,	Full Stack Training",
+    work: "Developer Evangelist,	Cloudinary",
     title: "Getting started with JAMstack",
     twitterHandle: "tpiros",
     imageSrc: `${CLOUDINARY_BASE_PATH}/v1581512778/unstack_speakers/TamasPiros.jpg`,
